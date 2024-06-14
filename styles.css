@@ -44,7 +44,7 @@ main {
 }
 
 main h1 {
-    font-size: 36px;
+    font-size: 58px;
     font-weight: 300;
     margin-bottom: 20px;
     color: #333;
@@ -61,17 +61,18 @@ main p {
   }
 
 .padding-1 {
-    padding: 30px;
+    
+    padding: 80px;
   }
 
-  .header1 {
+.header1 {
     background-color: rgba(255, 255, 255, 0.904); 
     color: white; 
     padding: 13px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     text-align: center; 
     position: fixed; 
-    top: 20px;
+    top: 25px;
     left: 50%;
     width: 1000px;
     transform: translateX(-50%);    
