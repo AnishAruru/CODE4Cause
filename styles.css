@@ -44,7 +44,7 @@ main {
 }
 
 main h1 {
-    font-size: 58px;
+    font-size: 70px;
     font-weight: 300;
     margin-bottom: 20px;
     color: #333;
@@ -61,7 +61,6 @@ main p {
   }
 
 .padding-1 {
-    
     padding: 80px;
   }
 
@@ -81,4 +80,9 @@ main p {
     border-top-right-radius: 23px;
     border-bottom-left-radius: 23px;
     border-bottom-right-radius: 23px;
+}
+
+.codecause {
+    color: rgba(106, 0, 255, 0.99);
+    font-size: 80px;
 }
