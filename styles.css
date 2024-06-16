@@ -43,7 +43,7 @@ main {
 }
 
 main h1 {
-    font-size: 70px;
+    font-size: 90px;
     font-weight: 300;
     margin-bottom: 20px;
     color:rgb(255, 145, 0);
@@ -57,17 +57,17 @@ main p {
 
 .padding-2 {
     padding: 60px;
-  }
+}
 
 .padding-1 {
-    padding: 100px;
-  }
+    padding: 95px;
+}
 
 .header1 {
     background-color: rgba(255, 255, 255, 0.904); 
     color: white; 
     padding: 13px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2); 
     text-align: center; 
     position: fixed; 
     top: 25px;
@@ -83,7 +83,9 @@ main p {
 
 .codecause {
     color: rgba(106, 0, 255, 0.99);
-    font-size: 80px;
+    font-size: 110px;
+    text-shadow: 3px 3px #ff6b6b, 6px 6px #f0e130, 9px 9px #6bf0e1;
+
 }
 
 .background-section {
@@ -91,8 +93,12 @@ main p {
     background-position: center;
     height: 800px; /* Adjust height as needed */
     position: relative;
-    z-index: 1; /* Ensure this is above other content */
+    z-index: 0; /* Ensure this is above other content */
     top: 0px;
     left: 0px;
     right: 0px;
+}
+
+.textbg {
+    z-index: 1;
 }
