@@ -63,6 +63,13 @@ main p {
     padding: 95px;
 }
 
+.padding-3 {
+    padding: 400px;
+}
+
+.padding-4 {
+    padding: 20px;
+}
 .header1 {
     background-color: rgba(255, 255, 255, 0.904); 
     color: white; 
@@ -92,13 +99,20 @@ main p {
     background-image: url('1600w-drvq3zaYl2E.png');
     background-position: center;
     height: 800px; /* Adjust height as needed */
-    position: relative;
+    position: fixed;
     z-index: 0; /* Ensure this is above other content */
     top: 0px;
     left: 0px;
     right: 0px;
 }
 
-.textbg {
-    z-index: 1;
+.everythingelse {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    background-color: white;
+}
+
+.positionrelative {
+    position: relative !important;
 }
