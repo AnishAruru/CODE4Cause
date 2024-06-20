@@ -1,8 +1,10 @@
 body {
-    font-family: 'poppins';
+    text-align: center;
+    font-family: 'Poppins';
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
@@ -15,6 +17,11 @@ header {
 
 }
 
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
 nav ul {
     list-style: none;
     margin: 0;
@@ -46,13 +53,14 @@ main h1 {
     font-size: 90px;
     font-weight: 300;
     margin-bottom: 20px;
-    color:rgb(255, 145, 0);
+    color: rgba(255, 255, 255, 0.904);
 }
 
 main p {
     font-size: 24px;
     font-weight: 400;
     color: #666;
+    text-align: center;
 }
 
 .padding-2 {
@@ -70,6 +78,7 @@ main p {
 .padding-4 {
     padding: 20px;
 }
+
 .header1 {
     background-color: rgba(255, 255, 255, 0.904); 
     color: white; 
@@ -89,18 +98,18 @@ main p {
 }
 
 .codecause {
-    color: rgba(106, 0, 255, 0.99);
+    color: rgb(163, 97, 255, 0.99);
     font-size: 110px;
-    text-shadow: 3px 3px #ff6b6b, 6px 6px #f0e130, 9px 9px #6bf0e1;
-
 }
 
 .background-section {
-    background-image: url('1600w-drvq3zaYl2E.png');
+    background-image: url('Blush Wave Desktop Wallpaper.png');
     background-position: center;
-    height: 800px; /* Adjust height as needed */
+    height: 800px;
+    /* Adjust height as needed */
     position: fixed;
-    z-index: 0; /* Ensure this is above other content */
+    z-index: 0;
+    /* Ensure this is above other content */
     top: 0px;
     left: 0px;
     right: 0px;
@@ -115,4 +124,72 @@ main p {
 
 .positionrelative {
     position: relative !important;
+}
+
+.logo {
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #002868;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.mission, .services, .inspiration, .endeavors {
+    margin-bottom: 40px;
+}
+
+.services h2, .inspiration h2 {
+    text-align: center;
+}
+
+.endeavors-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.endeavor {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+    text-align: center;
+}
+
+.endeavor h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .endeavors-container {
+        flex-direction: column;
+    }
+
+    .endeavor {
+        width: 80%;
+        margin-bottom: 20px;
+    }
 }
