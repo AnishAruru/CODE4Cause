@@ -1,18 +1,28 @@
+
 document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('nav ul li a');
+    const scrollElements = document.querySelectorAll('.scroll-fade-in');
 
-    for (const link of links) {
-        link.addEventListener('click', smoothScroll);
-    }
+    const elementInView = (el, dividend = 1) => {
+        const elementTop = el.getBoundingClientRect().top;
+        return (
+            elementTop <= 
+            (window.innerHeight || document.documentElement.clientHeight) / dividend
+        );
+    };
 
-    function smoothScroll(event) {
-        event.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
+    const displayScrollElement = (element) => {
+        element.classList.add('scroll-fade-in-visible');
+    };
 
-        window.scrollTo({
-            top: targetSection.offsetTop - 60, // Adjust for fixed header height
-            behavior: 'smooth'
+    const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+            if (elementInView(el, 1.25)) {
+                displayScrollElement(el);
+            }
         });
-    }
+    };
+
+    window.addEventListener('scroll', () => {
+        handleScrollAnimation();
+    });
 });

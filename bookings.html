@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code4Cause</title>
+    <link rel="stylesheet" href="stylesBooking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header1">
+        <img class="logo" src="CODE4Cause.png" alt="" width="70" height="70">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/about.html">Meet the team</a></li>
+                <li><a href="/bookings.html">Book a meeting</a></li>  
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>Book a Meeting</h1>
+        <form id="meetingForm" action="https://formspree.io/f/mjkbbbny" method="POST">
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="business">Business Name:</label>
+                <input type="text" id="business" name="business" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Preferred Meeting Time:</label>
+                <input type="datetime-local" id="time" name="time" required>
+            </div>
+            <button type="submit">Book Meeting</button>
+        </form>
+    </div>
+    <script src="script2.js"></script>
+    </body>
+    </html>
